@@ -21,7 +21,7 @@ body {
 }
 
 .search {
-    width: 90%; /* Ajuste para responsividade */
+    width: 100%; /* Ajuste para responsividade */
     max-width: 400px; /* Limitação máxima para telas menores */
     margin: 0 auto; /* Centraliza o bloco de pesquisa */
     display: flex;
