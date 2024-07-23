@@ -1,93 +1,150 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
-    background: cornflowerblue ;
-   
+
+body {
+    background: cornflowerblue;
 }
-.card{
-     width: 90%;
-     max-width: 470px;
-     background: linear-gradient(135deg, #00feba, #5b548a);
-     color: #fff;
-     margin: 100px auto 0;
-     border-radius: 20px;
-     padding: 40px 35px;
-     text-align: center;   
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
 }
-.search{
-     width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-}
-.search input {
-     border: 0;
-     outline: 0;
-     background: #ebfffc;
-     color: #555;
-     padding: 10px 25px;
-     height: 60px;
-     border-radius: 30px;
-     flex: 1;
-     margin-right: 16px;
-     font-size: 18px;
-}
-.search button {
-     border: 0;
-     outline: 0;
-     background: #ebfffc;
-     border-radius: 50%;
-     width: 60px;
-     height: 60px;
-     cursor: pointer;
-}
-.search button img{
-    width: 16px;
-}
-.weather-icon{
-     width: 170px;
-     margin-top: 30px;
-}
-.weather h1{
-     font-size: 80px;
-     font-weight: 500,
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-.details{
+
+.search {
+    width: 90%; /* Ajuste para responsividade */
+    max-width: 400px; /* Limitação máxima para telas menores */
+    margin: 0 auto; /* Centraliza o bloco de pesquisa */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
+    margin-bottom: 20px; /* Espaçamento inferior para telas menores */
 }
-.col{
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px; /* Ajuste para telas menores */
+    height: 50px; /* Altura reduzida para telas menores */
+    border-radius: 25px; /* Ajuste para telas menores */
+    flex: 1;
+    margin-right: 10px; /* Espaçamento direito reduzido para telas menores */
+    font-size: 16px; /* Tamanho de fonte reduzido para telas menores */
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px; /* Tamanho reduzido para telas menores */
+    height: 50px; /* Tamanho reduzido para telas menores */
+    cursor: pointer;
+}
+
+.search button img {
+    width: 14px; /* Tamanho reduzido para telas menores */
+}
+
+.weather-icon {
+    width: 130px; /* Tamanho reduzido para telas menores */
+    margin-top: 20px; /* Espaçamento superior reduzido para telas menores */
+}
+
+.weather h1 {
+    font-size: 60px; /* Tamanho de fonte reduzido para telas menores */
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 35px; /* Tamanho de fonte reduzido para telas menores */
+    font-weight: 400;
+    margin-top: -5px; /* Ajuste para telas menores */
+}
+
+.details {
     display: flex;
     align-items: center;
-    text-align: left; 
+    justify-content: space-between;
+    padding: 0 10px; /* Ajuste para telas menores */
+    margin-top: 30px; /* Espaçamento superior reduzido para telas menores */
 }
-.col img{
-    width: 40px;
-    margin-right: 10px;
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
-.humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
+
+.col img {
+    width: 30px; /* Tamanho reduzido para telas menores */
+    margin-right: 8px; /* Espaçamento direito reduzido para telas menores */
 }
-.weather{
-	display: none;
+
+.humidity,
+.wind {
+    font-size: 20px; /* Tamanho de fonte reduzido para telas menores */
+    margin-top: -4px; /* Ajuste para telas menores */
 }
-.error{
-	text-align: left;
-	margin-left: 10px;
-	font-size: 14px;
-	margin-top: 10px;
-	display: none;
+
+/* Media Query para telas menores (exemplo: até 600px de largura) */
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 30px 25px; /* Ajuste de padding para telas muito pequenas */
+    }
+
+    .search input {
+        padding: 8px 16px; /* Ajuste para telas muito pequenas */
+        height: 40px; /* Altura reduzida para telas muito pequenas */
+        border-radius: 20px; /* Ajuste para telas muito pequenas */
+        font-size: 14px; /* Tamanho de fonte reduzido para telas muito pequenas */
+    }
+
+    .search button {
+        width: 40px; /* Tamanho reduzido para telas muito pequenas */
+        height: 40px; /* Tamanho reduzido para telas muito pequenas */
+    }
+
+    .search button img {
+        width: 12px; /* Tamanho reduzido para telas muito pequenas */
+    }
+
+    .weather-icon {
+        width: 100px; /* Tamanho reduzido para telas muito pequenas */
+        margin-top: 10px; /* Espaçamento superior reduzido para telas muito pequenas */
+    }
+
+    .weather h1 {
+        font-size: 50px; /* Tamanho de fonte reduzido para telas muito pequenas */
+    }
+
+    .weather h2 {
+        font-size: 30px; /* Tamanho de fonte reduzido para telas muito pequenas */
+    }
+
+    .details {
+        padding: 0 5px; /* Ajuste de padding para telas muito pequenas */
+        margin-top: 20px; /* Espaçamento superior reduzido para telas muito pequenas */
+    }
+
+    .col img {
+        width: 24px; /* Tamanho reduzido para telas muito pequenas */
+        margin-right: 5px; /* Espaçamento direito reduzido para telas muito pequenas */
+    }
+
+    .humidity,
+    .wind {
+        font-size: 16px; /* Tamanho de fonte reduzido para telas muito pequenas */
+    }
 }
